@@ -1,0 +1,18 @@
+graph LR
+  Cost-Conscious Traveler --> Search Flights: Find flights
+  Search Flights --> Filter Flights by Price: Filter by budget (optional)
+  Search Flights --> Filter Flights by Eco-Friendliness: Filter by emissions (optional)
+  Search Flights --> View Fare Details: View breakdown of fare
+  View Fare Details <-- Filter Flights by Price
+  View Fare Details <-- Filter Flights by Eco-Friendliness
+  Search Flights --> Compare Flights: Compare flight options (optional)
+  Compare Flights <-- View Fare Details
+  View Fare Details --> Book Flight: Complete Booking
+  Book Flight <-- Compare Flights
+  Book Flight <-- View Fare Details
+  Air India Booking System <-- Search Flights
+  Air India Booking System <-- Filter Flights by Price
+  Air India Booking System <-- Filter Flights by Eco-Friendliness
+  Air India Booking System <-- View Fare Details
+  Air India Booking System <-- Compare Flights
+  Air India Booking System <-- Book Flight
